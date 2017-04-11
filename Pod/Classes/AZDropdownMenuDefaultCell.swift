@@ -133,6 +133,9 @@ public final class AZDropdownMenuDefaultCell: AZDropdownMenuBaseCell {
         if let icon = item.icon {
             self.iconView.image = icon
         }
+        if let color = item.titleColor {
+            self.titleLabel.textColor = color
+        }
     }
 
     override func configureStyle(_ config: AZDropdownMenuConfig) {
