@@ -314,7 +314,7 @@ open class AZDropdownMenu: UIView {
             withDuration: 0.3, delay: 0.1,
             options: [],
             animations: {
-                self.frame.origin.y = -1200
+                self.alpha = 0.0
             },
             completion: { (finished: Bool) -> Void in
                 self.menuView.center = self.initialMenuCenter
