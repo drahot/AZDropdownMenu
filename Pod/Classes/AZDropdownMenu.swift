@@ -249,7 +249,8 @@ open class AZDropdownMenu: UIView {
             }
         )
     }
-
+    
+    @objc
     func overlayTapped() {
         hideMenu()
     }
@@ -384,7 +385,8 @@ extension AZDropdownMenu: UITableViewDelegate {
 
 // MARK: - UIGestureRecognizerDelegate
 extension AZDropdownMenu: UIGestureRecognizerDelegate {
-
+    
+    @objc
     public func handlePan(gestureRecognizer: UIPanGestureRecognizer) {
         guard self.shouldDismissMenuOnDrag == true else {
             return
